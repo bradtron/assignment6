@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--Brad Bridge Assignment 6-->   
+<!--Brad Bridge Assign 6 -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,11 +46,8 @@
                 <div class="form-group">
                     <label for="name" class="control-label col-sm-3">Delivery Name:</label>
                     <div class="col-sm-6">
-                        <input type="text" id="delivery-name" class="form-control" name="name" placeholder="Your Name">   
+                        <input type="text" id="nameID" class="form-control" name="name" placeholder="Your Name">   
                     </div>        
-                    <div class="col-sm-3">
-                        <label id="nameMsgID" class="control-label col-sm-10 redtext hidethis">Enter your name:</label>
-                    </div>
                 </div>
                         
                 <div class="form-group">
@@ -76,19 +73,13 @@
                     <div class="col-sm-6">
                         <input id="streetID" type="text" name="delivery_street_address" class="form-control" placeholder="Street Address">
                     </div>
-                    <div class="col-sm-3">
-                        <label id="streetMsgID" class="control-label col-sm-10 redtext hidethis">Enter your street</label>
-                    </div>
                 </div>
                         
                 <div class="form-group">
                     <label for="delivery_optional_apt" class="control-label col-sm-3">Apt,Suite,Room:</label>
                     <div class="col-sm-6">
                         <input id="aptnoID" type="text" name="delivery_optional_apt" class="form-control" placeholder="Apt, Suite, or Room No">
-                    </div>
-                    <div class="col-sm-3">
-                        <label id="aptnoMsgID" class="control-label col-sm-10 redtext hidethis">Enter Apt,Suite,Room</label>
-                    </div>  
+                    </div> 
                 </div>
                         
                 <div class="form-group">
@@ -96,19 +87,13 @@
                     <div class="col-sm-6">
                         <input id="cityID" type="text" name="delivery_city" class="form-control" placeholder="City">
                     </div>
-                    <div  class="col-sm-3">
-                        <label id="cityMsgID" class="control-label col-sm-10 redtext hidethis">Enter City</label>
-                    </div>
                 </div>
                         
                 <div class="form-group">
                     <label for="delivery_state" class="control-label col-sm-3">State:</label>
                     <div class="col-sm-6">
                        <input id="stateID" type="text" name="delivery_state" class="form-control" placeholder="State">
-                    </div>
-                    <div  class="col-sm-3">
-                       <label id="stateMsgID" class="control-label col-sm-10 redtext hidethis">Enter State</label>
-                    </div>  
+                    </div> 
                 </div>
                         
                 <div class="form-group">
@@ -116,28 +101,19 @@
                     <div class="col-sm-6">
                         <input id="zipcodeID" type="text" name="delivery_zip" class="form-control" placeholder="Zip Code">
                     </div>
-                    <div  class="col-sm-3">
-                        <label id="zipMsgID" class="control-label col-sm-10 redtext hidethis">Enter Zipcode</label>
-                    </div> 
                 </div>
                         
                 <div class="form-group">
                     <label for="phone" class="control-label col-sm-3">Phone Number:</label>
                     <div class="col-sm-6">
                         <input id="phoneID" type="text" name="phone" class="form-control" placeholder="###-###-####">
-                    </div>
-                    <div  class="col-sm-3">
-                        <label id="phoneMsgID" class="control-label col-sm-10 redtext hidethis">Enter Phone Number</label>
-                    </div>         
+                    </div>        
                 </div>
                         
                 <div class="form-group">
                     <label for="email" class="control-label col-sm-3">Email:</label>
                     <div class="col-sm-6">
                         <input id="emailID" type="text" name="email" class="form-control" placeholder="yourname@domain.com">
-                    </div>
-                    <div  class="col-sm-3">
-                        <label id="emailMsgID" class="control-label col-sm-10 redtext hidethis">Enter Email Address</label>
                     </div>
                 </div>
                 
@@ -149,16 +125,13 @@
             <fieldset id="field2">
             <legend>Billing Information</legend>
                 <div class="form-group">
-                    <input  type="checkbox" id="billing_info_sameID" name="bill_info_same">
+                    <input  type="checkbox" id="billingSameID" name="bill_info_same">
                     <label for="bill_info_same" class="control-label">Same as delivery information</label>         
                 </div>
                 <div class="form-group">
                     <label for="bill_name" class="control-label col-sm-3">Name:</label>
                     <div class="col-sm-6">
                         <input id="billNameID" type="text" name="bill_name" class="form-control" placeholder="Your Name" >
-                    </div>
-                    <div class="col-sm-3">
-                        <label id="nameMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter your name</label>
                     </div>
                 </div>
                 
@@ -167,9 +140,6 @@
                     <div class="col-sm-6">
                         <input id="billStreetID" type="text" name="bill_street_address" class="form-control" placeholder="Address">
                     </div>
-                    <div class="col-sm-3">
-                        <label id="streetMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter your street</label>
-                    </div>
                 </div>
                 <div class="form-group">
                     <!--billing code-->    
@@ -177,45 +147,30 @@
                     <div class="col-sm-6">
                         <input id="billAptNoID" type="text" name="bill_optional_apt" class="form-control" placeholder="apt ste room">
                     </div>  
-                    <div class="col-sm-3">
-                        <label id="aptnoMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter Apt,Suite,Room</label>
-                    </div> 
                 </div>
                 <div class="form-group">
                     <label for="bill_city" class="control-label col-sm-3">City:</label>
                     <div class="col-sm-6">
                         <input id="billCityID" type="text" name="bill_city" class="form-control" placeholder="City">
                     </div>
-                    <div  class="col-sm-3">
-                        <label id="cityMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter City</label>
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="bill_state" class="control-label col-sm-3">State:</label>
                     <div class="col-sm-6">
                         <input id="billStateID" type="text" name="bill_state" class="form-control" placeholder="State">
-                    </div>
-                    <div  class="col-sm-3">
-                        <label id="stateMsg2ID" class="control-label col-sm-10 redtext hidethis">Enter State</label>
                     </div> 
                 </div>
                 <div class="form-group">
                     <label for="bill_zip" class="control-label col-sm-3">Zip Code:</label>
                     <div class="col-sm-6">
                         <input id="billZipCodeID" type="text" name="bill_zip" class="form-control" placeholder="Zip Code">
-                    </div>
-                    <div  class="col-sm-3">
-                        <label id="zipMsg2ID" class="control-label col-sm-10 redtext hidethis" redtext>Enter Zipcode</label>
                     </div> 
                 </div>
                 <div  class="form-group">
                     <label for="cc_number" class="control-label col-sm-3">Credit Card Number:</label>
                     <div id="cc_number" class="col-sm-6">
-                        <input type="text" name="cc_number" id="ccNumberID" class="form-control">
+                        <input id="billCredCardID" type="text" name="cc_number"  class="form-control">
                     </div>
-                    <div  class="col-sm-3">
-                        <label id="ccMsg2ID" class="control-label col-sm-10 redtext hidethis" redtext>Enter valid card no</label>
-                    </div> 
                 </div>
                 <div class="form-group">
                     <label for="cvc" class="control-label col-sm-3">CVC Code</label>
@@ -246,7 +201,6 @@
                     </div>
                     <div class="col-sm-4">
                         <select name="bill_year" class="form-control">
-                            <option value="2015">2015</option>
                             <option value="2016">2016</option>
                             <option value="2017">2017</option>
                             <option value="2018">2018</option>
@@ -303,18 +257,18 @@
                     </div>
                     <div id="toppings" class="form-group mainhide">
                         <label for="toppings" class="control-label col-sm-6">Toppings: (Each topping is $.99 extra)</label>
-                        <div id="toppings-list" class="col-sm-12"><br> 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Pepperoni 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Sausage 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Ham
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Bacon 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Salami 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Peppers 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Olives 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Jalapenos 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Mushrooms 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Pineapple 
-                           <input type="checkbox" name="toppings" value="0.99">&nbsp;Onion
+                        <div id="toppingslistID" class="col-sm-12"><br> 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Pepperoni 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Sausage 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Ham
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Bacon 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Salami 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Peppers 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Olives 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Jalapenos 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Mushrooms 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Pineapple 
+                <input type="checkbox" onchange="addUpOrder()" name="toppings" value="0.99" >&nbsp;Onion
                         </div>
                     </div>
                 </fieldset>
@@ -322,22 +276,11 @@
          </div>
                  
          <div class="col-lg-12">
-            <input id="calculateID" type="button" class="form control btn-lg" value="Calculate Cost">
+            <label id="labelCostID">Pizza Cost: </label>
             <input id="totalCostID" type="text" value="Total Cost: ">
             <input id="form-submit" type="button" class="form control btn-lg" value="Place Your Order">   
             <input id="orderPlacedID" type="text" value="">  
          </div>
-         
-         
-         
-<!--
-         <div class="col-lg-12">
-            <div id="submit-btn" class="form-group align-btn">
-                <input id="form-submit" type="button" class="form control btn-lg" value="Place Order">   
-                <input id="orderPlacedID" type="text" value="">  
-             </div>     
-        </div>
--->
 
         </form>
         
@@ -347,48 +290,35 @@
 
     </div> <!-- /container -->    
         
-        
-        
-        
+                              
         <script>
-        
-        //validate name
-//        function validateName(name) {
-//           if (!/^[a-zA-Z]*$/g.test(name)) {
-//              return false;
-//           }else{
-//              return true;
-//           }
-//        }  
-//        var bValidName = false;    
-//        bValidName = validateName("Sally");    
-//        window.alert("Sally is "+bValidName);       
-//        bValidName = validateName("San Diego");    
-//        window.alert("San Diego is "+bValidName);    
-//        bValidName = false;
-//        bValidName = validateName("John Doe");    
-//        window.alert("John Doe is "+bValidName);     
-//        bValidName = false;
-//        bValidName = validateName("123 Oak");    
-//        window.alert("123 Oak is "+bValidName);    
+        //validation functions...
         
         //validates all digits
         function isAllDigits(value){
            var isnum = /^\d+$/.test(value);
            return isnum
         }
-//        var bValidNum = false;    
-//        bValidNum = isAllDigits("Sally");    
-//        window.alert("'Sally' is " + bValidNum);       
-//        bValidNum = isAllDigits("123 oak");    
-//        window.alert("'San Diego' is " + bValidNum);    
-//        bValidNum = false;
-//        bValidNum = isAllDigits("John Doe");    
-//        window.alert("'John Doe' is " + bValidNum);     
-//        bValidNum = false;
-//        bValidNum = isAllDigits("123");    
-//        window.alert("'123' is " + bValidNum);
-                 
+        
+        //Name validator      
+        function validateName(name) {
+            var nameRegex = /^[a-zA-Z ]{2,30}$/; 
+            if (nameRegex.test(name) === true) {
+                return true;
+            } else {  
+                return false;
+            }
+        }
+            
+        //State validator  
+        function validateState(state) {
+            var stateRegex = /^([a-zA-Z]){2}$/;
+            if ((bValidState = stateRegex.test(state)) === true) {
+                return true;            
+            } else {
+                return false;
+            }
+        }                                           
         //phone number validator
         function validateUSPhoneNumber(phoneNumber) {
            var regExp = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/;
@@ -441,7 +371,9 @@
         document.getElementById("nyID").onclick = buildNyList;     
         document.getElementById("gfID").onclick = buildGfList; 
         
+        //call dispOrderPlacedMsg with the Place Order button...
         document.getElementById("form-submit").onclick = dispOrderPlacedMsg;    
+        function dispOrderPlacedMsg(){ orderPlacedID.value = "ORDER COMPLETE!"; }  
                  
         function buildHtList(){
             clearSizeCostList();
@@ -453,7 +385,8 @@
                 option.text = arrHandTossedSizeCostText[i];
                 option.value = arrHandTossedSizeCostValue[i];
                 selectList.appendChild(option);
-            }                 
+            }
+            addUpOrder();
         }
         function buildTcList(){
             clearSizeCostList();
@@ -465,7 +398,8 @@
                 option.text = arrThinCrustSizeCostText[i];
                 option.value = arrThinCrustSizeCostValue[i];
                 selectList.appendChild(option);
-            }           
+            }
+            addUpOrder();
         }   
         function buildNyList(){
             clearSizeCostList();
@@ -477,7 +411,8 @@
                 option.text = arrNewYorkStyleSizeCostText[i];
                 option.value = arrNewYorkStyleSizeCostValue[i];
                 selectList.appendChild(option);
-            }             
+            }
+            addUpOrder();
         }    
         function buildGfList(){
             clearSizeCostList();
@@ -489,7 +424,8 @@
                 option.text = arrGlutenFreeSizeCostText[i];
                 option.value = arrGlutenFreeSizeCostValue[i];
                 selectList.appendChild(option);
-            }   
+            }
+            addUpOrder();
         }    
         function clearSizeCostList(){
            var selectBox = document.getElementById("doughID");
@@ -499,102 +435,88 @@
               selectBox.remove(i);
            }
         }
-        //call dispOrderPlacedMsg with the Place Order button...
-        function dispOrderPlacedMsg(){
-            orderPlacedID.value = "THANKS, SUBMITTED!";
-        }    
+          
         
-        calculateID.addEventListener("click", addUpOrder);    
-        
-            
+        //calculateID.addEventListener("click", addUpOrder);    
+        //need a click=addUpOrder on each option value..    
+        var doughOptionEL = document.getElementById("doughID");    
+        doughOptionEL.addEventListener("change", addUpOrder);
+        var cheeseOptionEL = document.getElementById("cheeseID");    
+        cheeseOptionEL.addEventListener("change", addUpOrder);
+        var sauceOptionEL = document.getElementById("sauceID");    
+        sauceOptionEL.addEventListener("change", addUpOrder);
+               
         var gTotalCost = 0.00;    
         function addUpOrder(){
-           //window.alert("addUpOrder() fired!");
            gTotalCost = 0.00;     
-           
-           document.getElementById("totalCostID").value = "Total Cost:"; 
-            
-           var doughEL = document.getElementById("doughID");
-           var cost1 = doughEL.options[doughEL.selectedIndex].value;
-           gTotalCost += Number(cost1);
-            
-           var cheeseEL = document.getElementById("cheeseID");    
-           var cost2 = cheeseEL.options[cheeseEL.selectedIndex].value;
-           gTotalCost += Number(cost2);
-            
-           var sauceEL = document.getElementById("sauceID");    
-           var cost3 = sauceEL.options[sauceEL.selectedIndex].value;
-           gTotalCost += Number(cost3);   
-        
-           var toppingsCost = 0;
-           toppingsCost = .99 * checkboxCount(); 
+           document.getElementById("totalCostID").value = "Total Cost: $ "; 
+           //tally up the dough cost...  
+           var doughCost = doughOptionEL.options[doughOptionEL.selectedIndex].value;
+           gTotalCost += Number(doughCost);
+           //tally up the cheese cost...   
+           var cheeseCost = cheeseOptionEL.options[cheeseOptionEL.selectedIndex].value;
+           gTotalCost += Number(cheeseCost);
+           //tally up the sauce cost...    
+           var sauceCost = sauceOptionEL.options[sauceOptionEL.selectedIndex].value;
+           gTotalCost += Number(sauceCost); 
+           //tally up the toppings cost...
+           var toppingsCost = .99 * toppingCount(); 
            gTotalCost += toppingsCost;
-           
-           //window.alert("gTotalCost = " + gTotalCost);    
-            
-           document.getElementById("totalCostID").value += " $ ";
-            
-           //window.alert("totalCostID.value = " + totalCostID.value); 
-            
-           document.getElementById("totalCostID").value += gTotalCost;
+           //transer total cost to total cost text box...    
+           document.getElementById("totalCostID").value += gTotalCost.toFixed(2);
         }
-        
-        function checkboxCount(){
+        //function to tally up total number of toppings...
+        function toppingCount(){
            var inputElems = document.getElementsByTagName("input");
            var count = 0;
            for (var i=0; i<inputElems.length; i++) {
               if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
                  count++;
-                 //alert(count);
               }
            }
            return count;
         } 
-            
-
            
         var otherElem = document.getElementById("other");
         var selectList = document.getElementById("address-type");
         selectList.addEventListener("change", selectMade);
-        btnVerifyID.addEventListener("click", verifyForm);
+        btnVerifyID.addEventListener("click", verifyDeliverForm);
         btnVerifyBillingID.addEventListener("click", verifyBillingForm);
         
-        var billingInfoSameEL = document.getElementById("billing_info_sameID");
-        //problem with next line...
+        var billingInfoSameEL = document.getElementById("billingSameID");
         billingInfoSameEL.addEventListener("change", checkBoxClicked); 
         
         //get references to delivery fields...
-        var nameEL = document.getElementById("delivery-name");
-        //skipping over address-type field...
+        var nameEL    = document.getElementById("nameID");
         var streetEL  = document.getElementById("streetID");
         var aptnoEL   = document.getElementById("aptnoID");
         var cityEL    = document.getElementById("cityID");
         var stateEL   = document.getElementById("stateID");
         var zipcodeEL = document.getElementById("zipcodeID");
+        
         var phoneEL   = document.getElementById("phoneID");
         var emailEL   = document.getElementById("emailID");  
         
         //get references to billing fields...
-        var nameBillEL = document.getElementById("billNameID");
-        //
+        var nameBillEL    = document.getElementById("billNameID");
         var streetBillEL  = document.getElementById("billStreetID");
         var aptnoBillEL   = document.getElementById("billAptNoID");
         var cityBillEL    = document.getElementById("billCityID");
         var stateBillEL   = document.getElementById("billStateID");
-        var zipcodeBillEL = document.getElementById("billZipID");
+        var zipcodeBillEL = document.getElementById("billZipCodeID");
         
         function checkBoxClicked(){
-            if (this.checked == true){  
+            //alert("checkBoxClicked() entered");
+            if (this.checked == true){
+               //alert("this.checked == true"); 
                nameBillEL.value    = nameEL.value;
-                // alnernate xfer here...
                streetBillEL.value  = streetEL.value;
                aptnoBillEL.value   = aptnoEL.value;
                cityBillEL.value    = cityEL.value;
                stateBillEL.value   = stateEL.value;
                zipcodeBillEL.value = zipcodeEL.value;   
             }else{
-               nameBillEL.value    = "";
-                // alnernate xfer here...
+               nameBillEL.value    =  "";
                streetBillEL.value  =  "";
                aptnoBillEL.value   =  "";
                cityBillEL.value    =  "";
@@ -605,16 +527,19 @@
 
         var bOptionSelectionMade = false;
         function selectMade(){
-    
-            bOptionSelectionMade = true; 
-              
+            bOptionSelectionMade = true;    
             if (selectList.value == "other"){
                 otherElem.classList.remove("hidethis"); 
             }else{
                 otherElem.classList.add("hidethis");    
             }
         } 
-        function verifyForm(){
+            
+        function verifyDeliverForm(){
+           //validate the name 
+           var bValidName = validateName(nameID.value);
+           //validate the state
+           var bValidState = validateState(stateEL.value);
            //validate the zip code
            var bValidZipCode = false;
            bValidZipCode = isValidUSZip(zipcodeID.value);
@@ -625,139 +550,173 @@
            var bValidEmailAddr = false;
            bValidEmailAddr = validateEmail(emailID.value); 
             
-           if (  (nameEL.value.length    > 0 ) 
+           if (  ( bValidName ) 
               //&& (bOptionSelectionMade) 
               && (streetEL.value.length  > 0 ) 
               && (aptnoEL.value.length   > 0 )  
               && (cityEL.value.length    > 0 ) 
-              && (stateEL.value.length   > 0 ) 
+              && ( bValidState ) 
               && ( bValidZipCode ) 
               && ( bValidPhoneNumber ) 
               && ( bValidEmailAddr ) 
               )    
            {  
-              nameMsgID.classList.add("hidethis");  
-              streetMsgID.classList.add("hidethis"); 
-              aptnoMsgID.classList.add("hidethis");  
-              cityMsgID.classList.add("hidethis");    
-              stateMsgID.classList.add("hidethis"); 
-              zipMsgID.classList.add("hidethis");  
-              phoneMsgID.classList.add("hidethis"); 
-              emailMsgID.classList.add("hidethis"); 
-               
-              //window.alert("Form validated");   
+              nameID.classList.add("greenborder");  
+              streetID.classList.add("greenborder"); 
+              aptnoID.classList.add("greenborder");  
+              cityID.classList.add("greenborder");    
+              stateID.classList.add("greenborder"); 
+              zipcodeID.classList.add("greenborder");  
+              phoneID.classList.add("greenborder"); 
+              emailID.classList.add("greenborder");   
+              //window.alert("deliver Form validated");   
            }else{
               //window.alert("Form NOT validated"); 
-              if (nameEL.value.length < 1) {
-                 nameMsgID.classList.remove("hidethis");
+              if (!bValidName) {
+                 nameID.classList.remove("greenborder");
+                 nameID.classList.add("redborder");
               }else{
-                 nameMsgID.classList.add("hidethis"); 
+                 nameID.classList.remove("redborder");
+                 nameID.classList.add("greenborder"); 
               } 
               if (streetEL.value.length < 1) {
-                 streetMsgID.classList.remove("hidethis");     
+                 streetEL.classList.remove("greenborder");
+                 streetEL.classList.add("redborder");      
               }else{
-                 streetMsgID.classList.add("hidethis"); 
+                 streetEL.classList.remove("redborder"); 
+                 streetEL.classList.add("greenborder");
               }     
               if (aptnoEL.value.length < 1) {
-                 aptnoMsgID.classList.remove("hidethis");     
+                 aptnoEL.classList.remove("greenborder");
+                 aptnoEL.classList.add("redborder");     
               }else{
-                 aptnoMsgID.classList.add("hidethis"); 
+                 aptnoEL.classList.remove("redborder"); 
+                 aptnoEL.classList.add("greenborder"); 
               }  
-              if (cityEL.value.length < 1) { 
-                 cityMsgID.classList.remove("hidethis");    
+              if (cityEL.value.length < 1) {
+                 cityEL.classList.remove("greenborder");
+                 cityEL.classList.add("redborder");      
               }else{
-                 cityMsgID.classList.add("hidethis"); 
+                 cityEL.classList.remove("redborder"); 
+                 cityEL.classList.add("greenborder"); 
               }   
-              if (stateEL.value.length < 1) {
-                 var stateMsgEL = document.getElementById("stateMsgID");
-                 stateMsgEL.classList.remove("hidethis");
+              if (!bValidState) {
+                 stateEL.classList.remove("greenborder");
+                 stateEL.classList.add("redborder"); 
               }else{
-                 var stateMsgEL2 = document.getElementById("stateMsgID");
-                 stateMsgEL2.classList.add("hidethis"); 
+                 stateEL.classList.remove("redborder"); 
+                 stateEL.classList.add("greenborder");  
               }  
               if (!bValidZipCode) {
-                 zipMsgID.classList.remove("hidethis");     
+                 zipcodeID.classList.remove("greenborder"); 
+                 zipcodeID.classList.add("redborder");     
               }else{
-                 zipMsgID.classList.add("hidethis"); 
+                 zipcodeID.classList.remove("redborder"); 
+                 zipcodeID.classList.add("greenborder"); 
               }  
               if (!bValidPhoneNumber) {
-                 phoneMsgID.classList.remove("hidethis");     
+                 phoneEL.classList.remove("greenborder");
+                 phoneEL.classList.add("redborder");     
               }else{
-                 phoneMsgID.classList.add("hidethis"); 
+                 phoneEL.classList.remove("redborder"); 
+                 phoneEL.classList.add("greenborder"); 
               } 
               if (!bValidEmailAddr) {
-                 emailMsgID.classList.remove("hidethis");     
+                 emailID.classList.remove("greenborder");
+                 emailID.classList.add("redborder");    
               }else{
-                 emailMsgID.classList.add("hidethis"); 
+                 emailID.classList.remove("redborder"); 
+                 emailID.classList.add("greenborder");  
               }  
             }//else 
             return false;
         }//func        
             
         function verifyBillingForm(){ 
-           //validate the zipcode
-           var bBillValidZipCode = false;
-           bBillValidZipCode = isValidUSZip(billZipCodeID.value);       
-          //validate credit card
+          var bValidName = validateName(nameBillEL.value);
+          var bValidState = validateState(stateBillEL.value);
+          var bBillValidZipCode = false;
+          bBillValidZipCode = isValidUSZip(billZipCodeID.value);       
           var bValidCredCardNum = false;
-          if (ccNumberID.value != "") { 
-             bValidCredCardNum = validCreditCardNo(ccNumberID.value); 
+          if (billCredCardID.value != "") { 
+             bValidCredCardNum = validCreditCardNo(billCredCardID.value); 
           }   
           
-          if ( (billNameID.value.length > 0 ) 
+          if (   ( bValidName ) 
               //&& (bOptionSelectionMade) 
               && (billStreetID.value.length  > 0 ) 
               && (billAptNoID.value.length   > 0 )  
               && (billCityID.value.length    > 0 ) 
-              && (billStateID.value.length   > 0 ) 
-              && (bBillValidZipCode )
-              && (bValidCredCardNum)
+              && ( bValidState ) 
+              && ( bBillValidZipCode )
+              && ( bValidCredCardNum )
               )    
-           {  
-              nameMsg2ID.classList.add("hidethis");  
-              streetMsg2ID.classList.add("hidethis"); 
-              aptNoMsg2ID.classList.add("hidethis");  
-              cityMsg2ID.classList.add("hidethis"); 
-              stateMsg2ID.classList.add("hidethis"); 
-              zipMsg2ID.classList.add("hidethis");
-              ccMsgID.classList.add("hidethis"); 
+           {
+              billNameID.classList.remove("redborder");
+              billNameID.classList.add("greenborder"); 
+              billStreetID.classList.remove("redborder");
+              billStreetID.classList.add("greenborder");  
+              billAptNoID.classList.remove("redborder");
+              billAptNoID.classList.add("greenborder");  
+              billCityID.classList.remove("redborder");
+              billCityID.classList.add("greenborder"); 
+              billStateID.classList.remove("redborder");
+              billStateID.classList.add("greenborder"); 
+              billZipCodeID.classList.remove("redborder");
+              billZipCodeID.classList.add("greenborder");  
+              billCredCardID.classList.remove("redborder");
+              billCredCardID.classList.add("greenborder");  
               //window.alert("Billing Form validated");   
-           }else{ //missing some values
+           }else{ 
               //window.alert("Billing Form NOT validated");
-              if (billNameID.value.length < 1) {
-                 nameMsg2ID.classList.remove("hidethis");
+              if (!bValidName) {
+                 billNameID.classList.remove("greenborder");
+                 billNameID.classList.add("redborder");
               }else{ 
-                 nameMsg2ID.classList.add("hidethis"); 
+                 billNameID.classList.remove("redborder");
+                 billNameID.classList.add("greenborder");  
               } 
               if (billStreetID.value.length < 1) {
-                 streetMsg2ID.classList.remove("hidethis");     
+                 billStreetID.classList.remove("greenborder");
+                 billStreetID.classList.add("redborder");     
               }else{
-                 streetMsg2ID.classList.add("hidethis"); 
+                 billStreetID.classList.remove("redborder");
+                 billStreetID.classList.add("greenborder");   
               }     
               if (billAptNoID.value.length < 1) {
-                  aptnoMsg2ID.classList.remove("hidethis");
+                 billAptNoID.classList.remove("greenborder");
+                 billAptNoID.classList.add("redborder"); 
               }else{ 
-                  aptnoMsg2ID.classList.add("hidethis"); 
+                 billAptNoID.classList.remove("redborder");
+                 billAptNoID.classList.add("greenborder"); 
               } 
               if (billCityID.value.length < 1) {
-                 cityMsg2ID.classList.remove("hidethis");    
+                 billCityID.classList.remove("greenborder");
+                 billCityID.classList.add("redborder");    
               }else{
-                 cityMsg2ID.classList.add("hidethis"); 
+                 billCityID.classList.remove("redborder");
+                 billCityID.classList.add("greenborder"); 
               } 
-              if (billStateID.value.length < 1) { 
-                 stateMsg2ID.classList.remove("hidethis"); 
+              if (!bValidState) { 
+                 billStateID.classList.remove("greenborder");
+                 billStateID.classList.add("redborder"); 
               }else{    
-                 stateMsg2ID.classList.add("hidethis"); 
+                 billStateID.classList.remove("redborder");
+                 billStateID.classList.add("greenborder"); 
               } 
               if (!bBillValidZipCode) {
-                 zipMsg2ID.classList.remove("hidethis");     
+                 billZipCodeID.classList.remove("greenborder");
+                 billZipCodeID.classList.add("redborder");     
               }else{
-                 zipMsg2ID.classList.add("hidethis"); 
+                 billZipCodeID.classList.remove("redborder");
+                 billZipCodeID.classList.add("greenborder"); 
               } 
               if (!bValidCredCardNum) {
-                 ccMsg2ID.classList.remove("hidethis");     
+                 billCredCardID.classList.remove("greenborder");
+                 billCredCardID.classList.add("redborder");      
               }else{
-                 ccMsg2ID.classList.add("hidethis"); 
+                 billCredCardID.classList.remove("redborder");
+                 billCredCardID.classList.add("greenborder"); 
               } 
             }//else 
             return false;

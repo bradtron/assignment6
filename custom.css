@@ -6,3 +6,9 @@
     color: red;
     text-align:left !important;
 }
+.redborder{
+    border: solid red 3px !important;
+}
+.greenborder{
+    border: solid green 3px !important;
+}
